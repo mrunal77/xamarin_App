@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WeatherApp.MainPage">
+
+    <StackLayout Orientation="Vertical" Padding="30">       
+            <!-- Place new controls here -->
+            <Image Source="monster.png" 
+               Aspect="AspectFit"
+               HeightRequest="140"
+               WidthRequest="140"/>
+
+            <Entry x:Name="txtUserName"              
+               VerticalOptions="Center"
+               Placeholder="Enter User Name"
+               Margin="10"
+        ></Entry>
+
+            <Entry x:Name="txtPassword" 
+               IsPassword="True"
+               VerticalOptions="Center"
+               Placeholder="Password"
+               Margin="10"
+        ></Entry>
+            <Button Text="SIGN IN" x:Name="btnSignIn" Margin="20" CornerRadius="30"/>
+        
+    </StackLayout>
+
+</ContentPage>
